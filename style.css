@@ -1,0 +1,39 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+body { background: #0d0f17; color: #e0e0e0; padding: 20px; background: linear-gradient(135deg, #1a0b0b 0%, #0d0f17 100%); }
+
+.container { width: 100%; max-width: 1200px; margin: auto; background: #151a2d; border-radius: 10px; border: 1px solid #4a1a1a; overflow: hidden; }
+
+.header { text-align: center; padding: 30px; border-bottom: 2px solid #8B0000; }
+.main-logo { max-width: 300px; border-radius: 8px; border: 2px solid #8B0000; box-shadow: 0 0 15px rgba(255,0,0,0.3); }
+.title-main { font-size: 2.5rem; color: #ff2a2a; letter-spacing: 4px; margin: 15px 0; font-weight: 900; }
+.tag-vr { background: #8B0000; color: #fff; padding: 2px 10px; border-radius: 5px; }
+
+.content-grid { display: flex; flex-wrap: wrap; gap: 20px; padding: 30px; align-items: stretch; }
+.col-left { flex: 1.5; min-width: 320px; }
+.col-right { flex: 1; min-width: 300px; display: flex; flex-direction: column; gap: 20px; }
+
+.card { background: #1a1f35; border-radius: 10px; padding: 20px; border: 1px solid #2a3453; transition: transform 0.2s ease; }
+.section-label { color: #ff2a2a; border-bottom: 2px solid #8B0000; margin-bottom: 15px; padding-bottom: 10px; font-size: 1.2rem; }
+
+.widget-container { border-radius: 8px; overflow: hidden; height: 500px; background: #202225; }
+
+.label-tiktok, .label-youtube, .label-steam { color: #fff; font-size: 1.1rem; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; }
+
+.btn-link { text-decoration: none; color: #fff; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 20px; border-radius: 8px; font-weight: 700; }
+.btn-tiktok { background: linear-gradient(135deg, #000, #EE1D52); }
+.btn-youtube { background: linear-gradient(135deg, #f00, #900); }
+.btn-link img { width: 25px; }
+
+.steam-card { flex-grow: 1; display: flex; flex-direction: column; }
+.steam-status-wrap { flex-grow: 1; position: relative; display: flex; align-items: center; justify-content: center; background: #1b2838; border-radius: 8px; overflow: hidden; min-height: 150px; }
+.steam-placeholder { display: flex; align-items: center; gap: 10px; opacity: 0.15; filter: grayscale(1); }
+.steam-placeholder img { width: 40px; }
+
+.lock-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.65); display: flex; align-items: center; justify-content: center; }
+.lock-box { border: 2px solid #ff2a2a; padding: 15px; color: #ff2a2a; font-weight: 800; background: #000; text-align: center; }
+
+.site-footer { text-align: center; padding: 25px; border-top: 1px solid #8B0000; background: #1a0b0b; font-size: 0.9rem; }
+.site-footer a { color: #ff6666; text-decoration: none; }
+.legal { margin-top: 10px; opacity: 0.6; }
+
+@media (max-width: 800px) { .content-grid { flex-direction: column; } }
