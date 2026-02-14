@@ -30,14 +30,14 @@ body { background: #0d0f17; color: #e0e0e0; padding: 20px; background: linear-gr
 .tagline { font-size: 1.2rem; opacity: 0.8; margin-top: 15px; color: #e0e0e0; }
 
 .content-grid { display: flex; flex-wrap: wrap; gap: 20px; padding: 30px; align-items: stretch; }
-.col-left { flex: 1.5; min-width: 320px; }
+.col-left { flex: 1.5; min-width: 320px; display: flex; flex-direction: column; gap: 20px; }
 .col-right { flex: 1; min-width: 300px; display: flex; flex-direction: column; gap: 20px; }
 
 .card { background: #1a1f35; border-radius: 10px; padding: 20px; border: 1px solid #2a3453; transition: transform 0.2s ease; }
 .section-label { color: #ffffff; border-bottom: 2px solid #8B0000; margin-bottom: 15px; padding-bottom: 10px; font-size: 1.2rem; }
 .widget-container { border-radius: 8px; overflow: hidden; height: 500px; background: #202225; }
 
-.label-tiktok, .label-youtube, .label-steam, .label-itch { 
+.label-tiktok, .label-youtube, .label-steam, .label-itch, .label-reddit, .label-x, .label-credits { 
     color: #fff; 
     font-size: 1.1rem; 
     margin-bottom: 15px; 
@@ -59,6 +59,9 @@ body { background: #0d0f17; color: #e0e0e0; padding: 20px; background: linear-gr
 }
 .btn-tiktok { background: linear-gradient(135deg, #0a1f4a, #6b1a2b); }
 .btn-youtube { background: linear-gradient(135deg, #6a0000, #380000); }
+.btn-reddit { background: linear-gradient(135deg, #ff4d6d, #8b0000); }
+.btn-x { background: linear-gradient(135deg, #1a1a1a, #4d4d4d); }
+.btn-credits { background: linear-gradient(135deg, #2a1a4a, #1a0b2a); border: 1px solid #8B0000; }
 .btn-itch { background: linear-gradient(135deg, #fa5c5c, #9c2e2e); }
 .btn-link img { width: 25px; }
 
@@ -74,35 +77,7 @@ body { background: #0d0f17; color: #e0e0e0; padding: 20px; background: linear-gr
 .itch-card { width: 100%; }
 .itch-card .btn-link { width: 100%; }
 
-.credits-section { width: 100%; padding: 0 30px 30px 30px; }
-.credits-card { 
-    width: 100%; 
-    background: #151a2d; 
-    border: 1px solid #8B0000; 
-    border-radius: 10px; 
-}
-.credits-title { 
-    font-size: 2rem; 
-    font-weight: 900; 
-    margin-bottom: 25px; 
-    text-align: center; 
-    background: linear-gradient(135deg, #ffffff, #ff2a2a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    letter-spacing: 4px;
-}
-.credits-grid { 
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    gap: 15px; 
-    margin-bottom: 25px; 
-}
-.credit-item { 
-    color: #e0e0e0; 
-    padding: 8px; 
-    border-bottom: 1px solid #2a3453; 
-}
+.credits-nav-card { flex-grow: 0; width: 100%; }
 
 .site-footer { text-align: center; padding: 25px; border-top: 1px solid #8B0000; background: #1a0b0b; font-size: 0.9rem; }
 .site-footer a { color: #ff6666; text-decoration: none; }
@@ -110,5 +85,4 @@ body { background: #0d0f17; color: #e0e0e0; padding: 20px; background: linear-gr
 
 @media (max-width: 800px) { 
     .content-grid { flex-direction: column; } 
-    .credits-grid { grid-template-columns: 1fr; }
 }
