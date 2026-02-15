@@ -83,6 +83,26 @@ body { background: #0d0f17; color: #e0e0e0; padding: 20px; background: linear-gr
 .site-footer a { color: #ff6666; text-decoration: none; }
 .legal { margin-top: 10px; opacity: 0.6; }
 
-@media (max-width: 800px) { 
-    .content-grid { flex-direction: column; } 
+@media (max-width: 800px) {
+    body { padding: 10px; }
+    .header { padding: 30px 15px 25px 15px; }
+    .hero-artwork { margin-bottom: 20px; }
+    .title-main { font-size: 1.6rem; letter-spacing: 3px; }
+    .tagline { font-size: 1rem; margin-top: 10px; }
+    .content-grid { flex-direction: column; padding: 15px; gap: 15px; }
+    .col-left, .col-right { min-width: 0; gap: 15px; }
+    .widget-container { height: 350px; }
+    .card { padding: 15px; }
+    .btn-link { padding: 15px; font-size: 0.95rem; }
+    .steam-status-wrap { min-height: 100px; }
+    .itchio-fullwidth { padding: 0 15px 15px 15px; }
+    .site-footer { padding: 20px 15px; font-size: 0.85rem; }
+}
+
+@media (max-width: 400px) {
+    body { padding: 5px; }
+    .header { padding: 20px 10px 20px 10px; }
+    .title-main { font-size: 1.2rem; letter-spacing: 2px; }
+    .content-grid { padding: 10px; gap: 10px; }
+    .itchio-fullwidth { padding: 0 10px 10px 10px; }
 }
