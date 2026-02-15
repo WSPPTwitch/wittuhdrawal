@@ -56,12 +56,38 @@
 }
 
 @media (max-width: 800px) {
+    .credits-main {
+        padding: 25px 15px;
+        min-height: auto;
+    }
+
     .credits-container {
         grid-template-columns: 1fr;
         padding: 20px;
     }
-    
+
     .credit-item-large {
         font-size: 1rem;
+    }
+
+    .back-link {
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .credits-main {
+        padding: 15px 10px;
+    }
+
+    .credits-container {
+        padding: 15px;
+        gap: 12px;
+    }
+
+    .credit-item-large {
+        font-size: 0.9rem;
+        padding: 12px;
     }
 }
