@@ -37,7 +37,7 @@ body { background: #0d0f17; color: #e0e0e0; padding: 20px; background: linear-gr
 .section-label { color: #ffffff; border-bottom: 2px solid #8B0000; margin-bottom: 15px; padding-bottom: 10px; font-size: 1.2rem; }
 .widget-container { border-radius: 8px; overflow: hidden; height: 500px; background: #202225; }
 
-.label-tiktok, .label-youtube, .label-steam, .label-itch, .label-reddit, .label-x, .label-credits { 
+.label-tiktok, .label-youtube, .label-steam, .label-itch, .label-reddit, .label-x, .label-credits, .label-discord-fallback { 
     color: #fff; 
     font-size: 1.1rem; 
     margin-bottom: 15px; 
@@ -63,7 +63,9 @@ body { background: #0d0f17; color: #e0e0e0; padding: 20px; background: linear-gr
 .btn-x { background: linear-gradient(135deg, #1a1a1a, #4d4d4d); }
 .btn-credits { background: linear-gradient(135deg, #2a1a4a, #1a0b2a); border: 1px solid #8B0000; }
 .btn-itch { background: linear-gradient(135deg, #fa5c5c, #9c2e2e); }
+.btn-discord-fallback { background: linear-gradient(135deg, #5865F2, #404EED); }
 .btn-link img { width: 25px; }
+.btn-link i { font-size: 2rem; }
 
 .steam-card { flex-grow: 1; display: flex; flex-direction: column; }
 .steam-status-wrap { flex-grow: 1; position: relative; display: flex; align-items: center; justify-content: center; background: #1b2838; border-radius: 8px; overflow: hidden; min-height: 150px; }
@@ -79,30 +81,19 @@ body { background: #0d0f17; color: #e0e0e0; padding: 20px; background: linear-gr
 
 .credits-nav-card { flex-grow: 0; width: 100%; }
 
+.discord-fallback-card { width: 100%; }
+.fallback-note { 
+    font-size: 0.8rem; 
+    opacity: 0.7; 
+    text-align: center; 
+    margin-top: 10px; 
+    color: #a0a0a0; 
+}
+
 .site-footer { text-align: center; padding: 25px; border-top: 1px solid #8B0000; background: #1a0b0b; font-size: 0.9rem; }
 .site-footer a { color: #ff6666; text-decoration: none; }
 .legal { margin-top: 10px; opacity: 0.6; }
 
-@media (max-width: 800px) {
-    body { padding: 10px; }
-    .header { padding: 30px 15px 25px 15px; }
-    .hero-artwork { margin-bottom: 20px; }
-    .title-main { font-size: 1.6rem; letter-spacing: 3px; }
-    .tagline { font-size: 1rem; margin-top: 10px; }
-    .content-grid { flex-direction: column; padding: 15px; gap: 15px; }
-    .col-left, .col-right { min-width: 0; gap: 15px; }
-    .widget-container { height: 350px; }
-    .card { padding: 15px; }
-    .btn-link { padding: 15px; font-size: 0.95rem; }
-    .steam-status-wrap { min-height: 100px; }
-    .itchio-fullwidth { padding: 0 15px 15px 15px; }
-    .site-footer { padding: 20px 15px; font-size: 0.85rem; }
-}
-
-@media (max-width: 400px) {
-    body { padding: 5px; }
-    .header { padding: 20px 10px 20px 10px; }
-    .title-main { font-size: 1.2rem; letter-spacing: 2px; }
-    .content-grid { padding: 10px; gap: 10px; }
-    .itchio-fullwidth { padding: 0 10px 10px 10px; }
+@media (max-width: 800px) { 
+    .content-grid { flex-direction: column; } 
 }
