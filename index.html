@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Withdrawals VR</title>
+    <title>Withdrawals VR - Drug Empire Game</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -19,99 +19,130 @@
             </div>
         </header>
 
-        <main class="content-grid">
-            <div class="col-left">
-                <div class="card discord-card">
-                    <h2 class="section-label"><i class="fab fa-discord"></i> DISCORD SERVER</h2>
-                    <div class="widget-container">
-                        <iframe 
-                            src="https://discord.com/widget?id=1421821866212851846&theme=dark" 
-                            width="100%" 
-                            height="500" 
-                            allowtransparency="true" 
-                            frameborder="0" 
-                            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
-                        </iframe>
+        <main class="main-content">
+            <div class="game-description">
+                <h2 class="section-label"><i class="fas fa-gamepad"></i> ABOUT THE GAME</h2>
+                <div class="description-card">
+                    <p class="description-text">
+                        Withdrawals VR is an indie virtual reality game set in late 2000s/early 2010s, where you build your own drug empire from little to nothing. 
+                        Start small with just a crappy motel room and some low quality pots, you'll work your way up through 
+                        weed, shrooms, meth, coke, and finally MDMA. You will be able to purchase better properties (and maybe vehicles you can cook in, but i dunnnooooo if we'll get a grip on that lol)
+                    </p>
+                    
+                    <h3 class="subsection-title">THE STORY</h3>
+                    <p class="description-text">
+                        You play as a redneck in his 20's trying to escape a broken home. Your abusive father grew weed and 
+                        drank himself stupid, while your grandpa used you in his meth operation. Your messed up childhood is 
+                        exactly where your knowledge comes from. You've got no car, no house, nothing.. Just a tiny motel room 
+                        with some cheap pots and a dream.
+                    </p>
+                    <p class="description-text">
+                        As you build reputation with the right people, you'll unlock contacts who'll share their recipes - for a 
+                        price. Make enough money and eventually you might just make it out of this life. Or get deeper in. Your call.
+                    </p>
+                    
+                    <div class="release-info">
+                        <p><i class="fas fa-calendar-alt"></i> No set release date yet - it's coming when it's ready :p</p>
+                        <p><i class="fab fa-steam"></i> Definitely coming to Steam</p>
+                        <p><i class="fas fa-question-circle"></i> Meta Quest? We're still figuring that out</p>
                     </div>
-                </div>
-                
-                <div class="card credits-nav-card">
-                    <h2 class="label-credits"><i class="fas fa-users"></i> CREDITS</h2>
-                    <a href="/credits/" class="btn-link btn-credits">
-                        <span>VIEW CREDITS PAGE</span>
-                    </a>
-                </div>
-                
-                <div class="card discord-fallback-card">
-                    <h2 class="label-discord-fallback"><i class="fab fa-discord"></i> DISCORD INVITE</h2>
-                    <a href="https://discord.com/invite/X6fGg299aw" target="_blank" class="btn-link btn-discord-fallback">
-                        <i class="fab fa-discord fa-2x"></i>
-                        <span>JOIN DISCORD SERVER</span>
-                    </a>
-                    <p class="fallback-note">If the widget above doesn't load, click here to join directly.</p>
                 </div>
             </div>
 
-            <div class="col-right">
-                <div class="card social-card tiktok">
-                    <h2 class="label-tiktok"><i class="fab fa-tiktok"></i> TIKTOK</h2>
-                    <a href="https://www.tiktok.com/@withdrawalsvr" target="_blank" class="btn-link btn-tiktok">
-                        <img src="images/tiktok-icon.png" alt="">
-                        <span>VISIT TIKTOK</span>
-                    </a>
-                </div>
-                
-                <div class="card social-card youtube">
-                    <h2 class="label-youtube"><i class="fab fa-youtube"></i> YOUTUBE</h2>
-                    <a href="https://www.youtube.com/@WithdrawalsVR" target="_blank" class="btn-link btn-youtube">
-                        <img src="images/youtube-icon.png" alt="">
-                        <span>VISIT YOUTUBE</span>
-                    </a>
-                </div>
-                
-                <div class="card social-card reddit">
-                    <h2 class="label-reddit"><i class="fab fa-reddit-alien"></i> REDDIT</h2>
-                    <a href="https://www.reddit.com/r/WithdrawalsVR/" target="_blank" class="btn-link btn-reddit">
-                        <img src="images/reddit-icon.png" alt="">
-                        <span>VISIT REDDIT</span>
-                    </a>
-                </div>
-                
-                <div class="card social-card x">
-                    <h2 class="label-x"><i class="fab fa-x-twitter"></i> X.COM</h2>
-                    <a href="https://x.com/WithdrawalsVR" target="_blank" class="btn-link btn-x">
-                        <img src="images/x-icon.png" alt="">
-                        <span>VISIT X</span>
-                    </a>
-                </div>
-                
-                <div class="card steam-card">
-                    <h2 class="label-steam"><i class="fab fa-steam"></i> STEAM</h2>
-                    <div class="steam-status-wrap">
-                        <div class="steam-placeholder">
-                            <img src="images/steam-logo.png" alt="">
-                            <span>VISIT STEAM PAGE</span>
-                        </div>
-                        <div class="lock-overlay">
-                            <div class="lock-box">
-                                <i class="fas fa-exclamation-triangle"></i>
-                                <div class="lock-text">CURRENTLY UNAVAILABLE</div>
-                            </div>
-                        </div>
+            <!-- Drug Progression Chart -->
+            <div class="progression-section">
+                <h2 class="section-label"><i class="fas fa-chart-line"></i> YOUR EMPIRE AWAITS</h2>
+                <div class="progression-grid">
+                    <div class="progression-item weed">
+                        <span class="drug-name">WEED</span>
+                        <span class="drug-desc">Start small, lovely and tasty</span>
+                    </div>
+                    <div class="progression-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="progression-item shrooms">
+                        <span class="drug-name">SHROOMS</span>
+                        <span class="drug-desc">Expand your mind.. Or get stuck in another life as a cacti for 45 years..</span>
+                    </div>
+                    <div class="progression-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="progression-item meth">
+                        <span class="drug-name">METH</span>
+                        <span class="drug-desc">Baking bad hours</span>
+                    </div>
+                    <div class="progression-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="progression-item coke">
+                        <span class="drug-name">COKE</span>
+                        <span class="drug-desc">*snort* y-yes very g-good st-stuff</span>
+                    </div>
+                    <div class="progression-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="progression-item mdma">
+                        <span class="drug-name">MDMA</span>
+                        <span class="drug-desc">Methyl-dih-methamphetamine or sum like that? Anyways its good</span>
                     </div>
                 </div>
+            </div>
+
+            <!-- Featured Screenshot / Art Placeholder -->
+            <div class="featured-section">
+                <h2 class="section-label"><i class="fas fa-camera"></i> EARLY LOOK</h2>
+                <div class="featured-placeholder">
+                    <div class="placeholder-content">
+                        <i class="fas fa-image fa-4x"></i>
+                        <p>Screenshot coming soon<br><span class="placeholder-small">The motel room you start in</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Features Grid -->
+            <div class="features-section">
+                <h2 class="section-label"><i class="fas fa-star"></i> KEY FEATURES</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-cannabis"></i>
+                        <h4>5 Drug Types (maybe more in the future)</h4>
+                        <p>Weed → Shrooms → Meth → Coke → MDMA</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-home"></i>
+                        <h4>Property System</h4>
+                        <p>Upgrade from motel room to mansions</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-car"></i>
+                        <h4>Vehicle Cooking?</h4>
+                        <p>Maybe.. we're still figuring it out lol</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-users"></i>
+                        <h4>Reputation System</h4>
+                        <p>Build trust to unlock rare recipes</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-flask"></i>
+                        <h4>Realistic Chemistry</h4>
+                        <p>Well.. realistic enough for a redneck</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-skull"></i>
+                        <h4>Consequences</h4>
+                        <p>Get deeper in or get out. Your choice.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gritty Quote -->
+            <div class="quote-section">
+                <div class="quote-card">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p class="quote-text">From a motel room with some cheap pots to a empire. Or a body bag. We'll see.</p>
+                    <p class="quote-author">- The dev team</p>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="nav-buttons">
+                <a href="/credits/" class="nav-btn"><i class="fas fa-users"></i> VIEW CREDITS</a>
+                <a href="/socials/" class="nav-btn"><i class="fas fa-share-alt"></i> VIEW SOCIALS</a>
             </div>
         </main>
-
-        <div class="itchio-fullwidth">
-            <div class="card itch-card">
-                <h2 class="label-itch"><i class="fab fa-itch-io"></i> ITCH.IO</h2>
-                <a href="https://willywithdrawals.itch.io/withdrawals-vr" target="_blank" class="btn-link btn-itch">
-                    <img src="images/itchio-icon.png" alt="">
-                    <span>VISIT ITCH.IO PAGE</span>
-                </a>
-            </div>
-        </div>
 
         <footer class="site-footer">
             <div class="footer-inner">
