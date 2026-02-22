@@ -1,55 +1,53 @@
 .donations-main {
-    padding: 30px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
 }
 
 .section-label { 
     color: #ffffff; 
     border-bottom: 2px solid #8B0000; 
-    margin-bottom: 25px; 
-    padding-bottom: 10px; 
-    font-size: 1.5rem; 
+    margin-bottom: 15px; 
+    padding-bottom: 8px; 
+    font-size: clamp(1.2rem, 5vw, 1.5rem); 
 }
 
-/* Message Card */
+/* Message Card - Mobile Optimized */
 .message-card {
     background: #1a1f35;
     border: 1px solid #8B0000;
     border-radius: 10px;
-    padding: 30px;
-    margin-bottom: 20px;
+    padding: 20px;
     box-shadow: 0 0 20px rgba(139, 0, 0, 0.2);
 }
 
 .message-content {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
 }
 
 .message-text {
-    font-size: 1.1rem;
+    font-size: clamp(0.95rem, 3.5vw, 1.1rem);
     line-height: 1.6;
     color: #e0e0e0;
 }
 
 .message-text.highlight {
     color: #ff6666;
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 4vw, 1.2rem);
     border-left: 4px solid #8B0000;
-    padding-left: 20px;
+    padding: 12px 15px;
     background: rgba(0, 0, 0, 0.2);
-    padding: 15px 20px;
     border-radius: 0 8px 8px 0;
 }
 
-/* Promise List */
+/* Promise List - Mobile Optimized */
 .promise-list {
     background: rgba(0, 0, 0, 0.3);
     border-radius: 8px;
-    padding: 20px;
+    padding: 15px;
     margin: 10px 0;
     border: 1px solid #2a3453;
 }
@@ -57,219 +55,6 @@
 .promise-item {
     display: flex;
     align-items: flex-start;
-    gap: 15px;
-    margin: 15px 0;
-    color: #d0d0d0;
-}
-
-.promise-item i {
-    color: #ff2a2a;
-    font-size: 1.2rem;
-    margin-top: 2px;
-}
-
-.promise-item strong {
-    color: #ffffff;
-}
-
-.fine-print {
-    font-size: 0.9rem;
-    opacity: 0.7;
-    font-style: italic;
-    text-align: center;
-    margin-top: 10px;
-    color: #a0a0a0;
-}
-
-/* Donations Grid */
-.donations-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-    margin-bottom: 20px;
-}
-
-.donation-card {
-    background: #1a1f35;
-    border: 1px solid #2a3453;
-    border-radius: 10px;
-    padding: 25px;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.donation-card:hover {
-    transform: translateY(-5px);
-    border-color: #8B0000;
-    box-shadow: 0 5px 20px rgba(139, 0, 0, 0.3);
-}
-
-.donation-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 15px;
-}
-
-.donation-icon {
-    width: 32px;
-    height: 32px;
-    object-fit: contain;
-}
-
-.donation-header h3 {
-    color: #ffffff;
-    font-size: 1.3rem;
-}
-
-.donation-description {
-    color: #b0b0b0;
-    font-size: 0.95rem;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    min-height: 60px;
-}
-
-.donation-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 15px 25px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 700;
-    width: 100%;
-    transition: all 0.2s ease;
-}
-
-.kofi-btn {
-    background: linear-gradient(135deg, #29abe0, #1b7fa8);
-    color: white;
-}
-
-.kofi-btn:hover {
-    background: linear-gradient(135deg, #1b7fa8, #135c7a);
-    transform: scale(1.02);
-}
-
-.bmc-btn {
-    background: linear-gradient(135deg, #ffdd00, #ccaa00);
-    color: #000000;
-}
-
-.bmc-btn:hover {
-    background: linear-gradient(135deg, #ccaa00, #aa8800);
-    transform: scale(1.02);
-}
-
-/* Patreon Card */
-.patreon-card {
-    background: #1a1f35;
-    border: 1px solid #2a3453;
-    border-radius: 10px;
-    padding: 25px;
-    margin-bottom: 20px;
-}
-
-.patreon-header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.patreon-header i {
-    font-size: 2rem;
-    color: #ff424d;
-}
-
-.patreon-header h3 {
-    color: #ffffff;
-    font-size: 1.5rem;
-}
-
-.patreon-status {
-    position: relative;
-    background: #1b2838;
-    border-radius: 8px;
-    overflow: hidden;
-    min-height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 15px;
-}
-
-.patreon-placeholder {
-    opacity: 0.15;
-    filter: grayscale(1);
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #ffffff;
-}
-
-.patreon-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.patreon-message {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: #ff6666;
-    font-size: 1.2rem;
-    font-weight: 700;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: 1px solid #8B0000;
-}
-
-.patreon-note {
-    color: #a0a0a0;
-    font-size: 0.9rem;
-    font-style: italic;
-    text-align: center;
-    margin-top: 10px;
-}
-
-/* Back to Home */
-.back-to-home { 
-    text-align: center; 
-    padding: 20px 0; 
-}
-.back-link { 
-    display: inline-block; 
-    color: #ff6666; 
-    text-decoration: none; 
-    font-size: 1.1rem; 
-    padding: 10px 20px; 
-    border: 1px solid #8B0000; 
-    border-radius: 5px; 
-    transition: all 0.2s ease; 
-}
-.back-link:hover { 
-    color: #ff2a2a; 
-    background: rgba(139, 0, 0, 0.2); 
-    transform: translateX(-5px); 
-}
-
-/* Responsive */
-@media (max-width: 800px) {
-    .donations-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .promise-item {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 5px;
-    }
-}
+    gap: 12px;
+    margin: 12px 0;
+    color: #d0d0d
