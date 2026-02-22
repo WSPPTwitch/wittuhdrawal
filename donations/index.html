@@ -37,15 +37,15 @@
         </div>
 
         <main class="donations-main">
-            <!-- Main Message -->
-            <div class="message-card">
-                <h2 class="section-label"><i class="fas fa-heart"></i> YOU CAN VOLUNTARILY SUPPORT US!</h2>
+            <!-- Main Message Card (clean like socials) -->
+            <div class="card message-card">
+                <h2 class="section-label"><i class="fas fa-heart"></i> SUPPORT US</h2>
                 <div class="message-content">
-                    <p class="message-text">
+                    <p class="description-text">
                         Look, making a VR game about cooking meth in a motel room isn't exactly cheap. 
                         We've got bills, we've got developers who need to eat, and honestly? We've got dreams.
                     </p>
-                    <p class="message-text highlight">
+                    <p class="description-text highlight">
                         We will make sure that the money lands on our developers bank account. 
                         Not on hookers and blow. Probably.
                     </p>
@@ -76,35 +76,34 @@
                 </div>
             </div>
 
-            <!-- Active Donation Options -->
+            <!-- Donation Options - Clean Panels like Socials -->
             <h2 class="section-label"><i class="fas fa-mug-hot"></i> BUY US STUFF</h2>
-            <div class="donations-grid">
-                <!-- Ko-fi -->
-                <div class="donation-card">
-                    <div class="donation-header">
-                        <img src="../images/kofi-icon.png" alt="Ko-fi" class="donation-icon">
-                        <h3>Ko-fi</h3>
+            
+            <div class="content-grid donations-grid">
+                <!-- Left Column -->
+                <div class="col-left">
+                    <!-- Ko-fi Panel -->
+                    <div class="card donation-card">
+                        <h2 class="label-kofi"><i class="fas fa-mug-hot"></i> KO-FI</h2>
+                        <p class="donation-description">Buy us a coffee. Or fifty. We're not judging. Every cup keeps the code flowing.</p>
+                        <a href="https://ko-fi.com/willybeyond" target="_blank" class="btn-link btn-kofi">
+                            <i class="fas fa-mug-hot"></i>
+                            <span>SUPPORT ON KO-FI</span>
+                        </a>
                     </div>
-                    <p class="donation-description">
-                        Buy us a coffee. Or fifty. We're not judging. Every cup keeps the code flowing.
-                    </p>
-                    <a href="https://ko-fi.com/willybeyond" target="_blank" class="donation-btn kofi-btn">
-                        <i class="fas fa-mug-hot"></i> SUPPORT ON KO-FI
-                    </a>
                 </div>
 
-                <!-- Buy Me a Coffee -->
-                <div class="donation-card">
-                    <div class="donation-header">
-                        <img src="../images/buymeacoffee-icon.png" alt="Buy Me a Coffee" class="donation-icon">
-                        <h3>Buy Me a Coffee</h3>
+                <!-- Right Column -->
+                <div class="col-right">
+                    <!-- Buy Me a Coffee Panel -->
+                    <div class="card donation-card">
+                        <h2 class="label-bmc"><i class="fas fa-coffee"></i> BUY ME A COFFEE</h2>
+                        <p class="donation-description">Same vibe, different platform. Wilson likes this one. Something about the interface.</p>
+                        <a href="https://buymeacoffee.com/wilsonbeyond" target="_blank" class="btn-link btn-bmc">
+                            <i class="fas fa-coffee"></i>
+                            <span>SUPPORT ON BMC</span>
+                        </a>
                     </div>
-                    <p class="donation-description">
-                        Same vibe, different platform. Wilson likes this one. Something about the interface.
-                    </p>
-                    <a href="https://buymeacoffee.com/wilsonbeyond" target="_blank" class="donation-btn bmc-btn">
-                        <i class="fas fa-coffee"></i> SUPPORT ON BMC
-                    </a>
                 </div>
             </div>
 
@@ -119,21 +118,18 @@
                 <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
             </div>
 
-            <!-- Greyed Out Patreon -->
+            <!-- Patreon Panel (Greyed Out) -->
             <h2 class="section-label"><i class="fab fa-patreon"></i> PATREON</h2>
-            <div class="patreon-card">
-                <div class="patreon-header">
-                    <i class="fab fa-patreon"></i>
-                    <h3>Patreon</h3>
-                </div>
-                <div class="patreon-status">
+            <div class="card patreon-card">
+                <h2 class="label-patreon"><i class="fab fa-patreon"></i> PATREON</h2>
+                <div class="patreon-status-wrap">
                     <div class="patreon-placeholder">
                         <span>PATREON PAGE</span>
                     </div>
-                    <div class="patreon-overlay">
-                        <div class="patreon-message">
+                    <div class="lock-overlay patreon-overlay">
+                        <div class="lock-box patreon-box">
                             <i class="fas fa-hourglass-half"></i>
-                            <span>Maybe soon?..</span>
+                            <div class="lock-text">MAYBE SOON?..</div>
                         </div>
                     </div>
                 </div>
