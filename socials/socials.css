@@ -1,18 +1,51 @@
-.content-grid { display: flex; flex-wrap: wrap; gap: 20px; padding: 30px; align-items: stretch; }
-.col-left { flex: 1.5; min-width: 320px; display: flex; flex-direction: column; gap: 20px; }
-.col-right { flex: 1; min-width: 300px; display: flex; flex-direction: column; gap: 20px; }
+.content-grid { 
+    display: flex; 
+    flex-direction: column;
+    gap: 20px; 
+    padding: 20px; 
+    align-items: stretch; 
+}
 
-.card { background: #1a1f35; border-radius: 10px; padding: 20px; border: 1px solid #2a3453; transition: transform 0.2s ease; }
-.section-label { color: #ffffff; border-bottom: 2px solid #8B0000; margin-bottom: 15px; padding-bottom: 10px; font-size: 1.2rem; }
-.widget-container { border-radius: 8px; overflow: hidden; height: 500px; background: #202225; }
+.col-left, .col-right { 
+    width: 100%;
+    min-width: auto;
+    display: flex; 
+    flex-direction: column; 
+    gap: 20px; 
+}
+
+.card { 
+    background: #1a1f35; 
+    border-radius: 10px; 
+    padding: 15px; 
+    border: 1px solid #2a3453; 
+    transition: transform 0.2s ease; 
+    width: 100%;
+}
+
+.section-label { 
+    color: #ffffff; 
+    border-bottom: 2px solid #8B0000; 
+    margin-bottom: 12px; 
+    padding-bottom: 8px; 
+    font-size: clamp(1.1rem, 4.5vw, 1.2rem); 
+}
+
+.widget-container { 
+    border-radius: 8px; 
+    overflow: hidden; 
+    height: 400px; 
+    background: #202225; 
+}
 
 .label-tiktok, .label-youtube, .label-steam, .label-itch, .label-reddit, .label-x, .label-discord-fallback { 
     color: #fff; 
-    font-size: 1.1rem; 
-    margin-bottom: 15px; 
+    font-size: clamp(1rem, 4vw, 1.1rem); 
+    margin-bottom: 12px; 
     display: flex; 
     align-items: center; 
     gap: 8px; 
+    flex-wrap: wrap;
 }
 
 .btn-link { 
@@ -21,61 +54,153 @@
     display: flex; 
     align-items: center; 
     justify-content: center; 
-    gap: 10px; 
-    padding: 20px; 
+    gap: 8px; 
+    padding: 15px; 
     border-radius: 8px; 
     font-weight: 700; 
+    font-size: clamp(0.9rem, 3.5vw, 1rem);
+    text-align: center;
+    word-break: break-word;
 }
+
 .btn-tiktok { background: linear-gradient(135deg, #0a1f4a, #6b1a2b); }
 .btn-youtube { background: linear-gradient(135deg, #6a0000, #380000); }
 .btn-reddit { background: linear-gradient(135deg, #ff4d6d, #8b0000); }
 .btn-x { background: linear-gradient(135deg, #1a1a1a, #4d4d4d); }
 .btn-itch { background: linear-gradient(135deg, #fa5c5c, #9c2e2e); }
 .btn-discord-fallback { background: linear-gradient(135deg, #5865F2, #404EED); }
-.btn-link img { width: 25px; }
-.btn-link i { font-size: 2rem; }
 
-.steam-card { flex-grow: 1; display: flex; flex-direction: column; }
-.steam-status-wrap { flex-grow: 1; position: relative; display: flex; align-items: center; justify-content: center; background: #1b2838; border-radius: 8px; overflow: hidden; min-height: 150px; }
-.steam-placeholder { display: flex; align-items: center; gap: 10px; opacity: 0.15; filter: grayscale(1); }
-.steam-placeholder img { width: 40px; }
+.btn-link img { width: 22px; height: 22px; }
+.btn-link i { font-size: 1.8rem; }
 
-.lock-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.65); display: flex; align-items: center; justify-content: center; }
-.lock-box { border: 2px solid #ff2a2a; padding: 15px; color: #ff2a2a; font-weight: 800; background: #000; text-align: center; }
+.steam-card { width: 100%; }
+.steam-status-wrap { 
+    width: 100%; 
+    position: relative; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background: #1b2838; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    min-height: 120px; 
+}
 
-.itchio-fullwidth { width: 100%; padding: 0 30px 30px 30px; }
+.steam-placeholder { 
+    display: flex; 
+    align-items: center; 
+    gap: 8px; 
+    opacity: 0.15; 
+    filter: grayscale(1); 
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.steam-placeholder img { width: 30px; }
+.steam-placeholder span { font-size: clamp(0.8rem, 3vw, 0.9rem); }
+
+.lock-overlay { 
+    position: absolute; 
+    inset: 0; 
+    background: rgba(0,0,0,0.65); 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 10px;
+}
+
+.lock-box { 
+    border: 2px solid #ff2a2a; 
+    padding: 12px; 
+    color: #ff2a2a; 
+    font-weight: 800; 
+    background: #000; 
+    text-align: center; 
+    width: 90%;
+    max-width: 280px;
+}
+
+.lock-box i { font-size: 1.2rem; margin-bottom: 5px; }
+.lock-text { font-size: clamp(0.8rem, 3.5vw, 0.9rem); }
+
+.itchio-fullwidth { 
+    width: 100%; 
+    padding: 0 20px 20px 20px; 
+}
+
 .itch-card { width: 100%; }
 .itch-card .btn-link { width: 100%; }
 
 .discord-fallback-card { width: 100%; }
 .fallback-note { 
-    font-size: 0.8rem; 
+    font-size: clamp(0.75rem, 3vw, 0.8rem); 
     opacity: 0.7; 
     text-align: center; 
-    margin-top: 10px; 
+    margin-top: 8px; 
     color: #a0a0a0; 
+    padding: 0 5px;
 }
 
 .back-to-home { 
     text-align: center; 
-    padding: 0 30px 30px 30px; 
+    padding: 0 20px 25px 20px; 
 }
+
 .back-link { 
     display: inline-block; 
     color: #ff6666; 
     text-decoration: none; 
-    font-size: 1.1rem; 
-    padding: 10px 20px; 
+    font-size: clamp(0.95rem, 3.5vw, 1.1rem); 
+    padding: 12px 20px; 
     border: 1px solid #8B0000; 
     border-radius: 5px; 
     transition: all 0.2s ease; 
+    width: auto;
+    max-width: 90%;
 }
+
 .back-link:hover { 
     color: #ff2a2a; 
     background: rgba(139, 0, 0, 0.2); 
     transform: translateX(-5px); 
 }
 
-@media (max-width: 800px) { 
-    .content-grid { flex-direction: column; } 
+/* Tablet and Desktop Improvements */
+@media (min-width: 801px) {
+    .content-grid { 
+        flex-direction: row; 
+        padding: 30px; 
+        gap: 20px; 
+    }
+    
+    .col-left { 
+        flex: 1.5; 
+        min-width: 320px; 
+    }
+    
+    .col-right { 
+        flex: 1; 
+        min-width: 300px; 
+    }
+    
+    .card { padding: 20px; }
+    .widget-container { height: 500px; }
+    .btn-link { padding: 20px; }
+    .steam-status-wrap { min-height: 150px; }
+    .lock-box { padding: 15px; }
+    .itchio-fullwidth { padding: 0 30px 30px 30px; }
+}
+
+/* Small Mobile Adjustments */
+@media (max-width: 380px) {
+    .content-grid { padding: 15px; }
+    .card { padding: 12px; }
+    .btn-link { 
+        flex-direction: column; 
+        padding: 12px;
+    }
+    .btn-link img { width: 28px; height: 28px; }
+    .steam-placeholder { flex-direction: column; }
+    .back-link { width: 100%; }
 }
